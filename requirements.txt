@@ -1,0 +1,16 @@
+# Core (robot runtime) — install on the MINISFORUM
+numpy>=1.26
+scipy>=1.11
+opencv-python>=4.8
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+pyserial>=3.5
+
+# Hardware backends (real rig only)
+# openni2 / primesense bindings for Astra Pro (you already have the SDK)
+# ultralytics>=8.2        # YOLOv8 detection (set use_yolo=true in config)
+# mediapipe>=0.10         # hand landmarks for grip classification
+
+# LLM planner (prompt → policy); needs MOONSHOT_API_KEY
+# openai>=1.30            # Moonshot API is OpenAI-compatible

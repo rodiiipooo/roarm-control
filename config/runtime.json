@@ -1,0 +1,19 @@
+{
+  "simulate": false,
+  "use_yolo": true,
+  "serial": { "arm_port": "COM3", "baud": 115200 },
+  "r2s": {
+    "enabled": true,
+    "joint_endpoint": "tcp://127.0.0.1:5555",
+    "palm_grasp_ctl": "tcp://127.0.0.1:5560",
+    "frame_hub": "http://127.0.0.1:8766",
+    "workspace_cam_serial": "17110210225",
+    "underarm_cam_serial": "17122121839"
+  },
+  "cameras": [
+    { "role": "head", "width": 640, "height": 480, "fps": 30 },
+    { "role": "arm",  "width": 640, "height": 480, "fps": 30 }
+  ],
+  "api_host": "0.0.0.0",
+  "api_port": 8000
+}
